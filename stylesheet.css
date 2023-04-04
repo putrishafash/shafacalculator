@@ -1,8 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #c7dbf37f, #f3a683);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* code CSS ke class calculator untuk mensejajarkan ke tengah */
 .calculator{
     text-align: center;
     margin: 0 auto;
-    padding-top: 200px;
     width: 400px;
 }
 
@@ -16,10 +29,14 @@
     border: none;
     padding: 0px 20px;
     box-sizing: border-box;
+    
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
+    border-radius: 10px 10px 0px 0px;
 }
 
 .calculator-keys{
     width: 100%;
+    box-shadow: 7px 7px 7px rgba(0,0,0,0.5);
 }
 
 .row{
@@ -50,4 +67,12 @@ button:hover{
 
 .operator:hover, .equal-sign:hover{
     background-color: darkorange;
+}
+
+.zero-btn{
+    border-radius: 0px 0px 0px 10px;
+}
+
+.equal-sign{
+    border-radius: 0px 0px 10px 0px;
 }
